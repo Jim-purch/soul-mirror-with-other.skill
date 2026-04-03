@@ -40,9 +40,10 @@
 
 ```text
 .
-├── SKILL.md            # 核心指令集 (AI 的大脑与人格定义)
-├── README.md           # 项目说明文档
-└── references/         # 结构化题库与规则库
+├── SKILL.md                    # 核心指令集 (AI 的大脑与人格定义)
+├── SOUL_MIRROR_COMPLETE_PROMPT.md # 🤖 AI 专用全量提示词 (一键导入版)
+├── README.md                   # 项目说明文档
+└── references/                 # 结构化题库与规则库
     ├── start-rules.md  # 游戏规则宣读与结束仪式流程
     ├── couples.md      # 情侣对话题库 (感知与联结)
     ├── couples-deep.md # 情侣深度对话题库 (反思与核心)
@@ -63,6 +64,16 @@
 - "帮我和朋友做一个互动"
 - "我想更了解我的孩子/父母"
 - "开始灵魂镜子多人游戏"
+
+---
+
+## 🤖 开发者与 AI Agent 指南
+
+为了帮助 AI Agent (如 Claude, GPT-4, Cursor, Windsurf 等) 一次性读入所有上下文信息，建议直接使用项目根目录下的：
+
+👉 **[SOUL_MIRROR_COMPLETE_PROMPT.md](./SOUL_MIRROR_COMPLETE_PROMPT.md)**
+
+该文件整合了 `SKILL.md` 的所有逻辑与 `references/` 下的所有题库。你只需要将该文件的内容作为 System Prompt 喂给 AI，即可获得完整的 Skill 能力，无需手动分批导入参考文档。
 
 ---
 
